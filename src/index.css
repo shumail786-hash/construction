@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in;
+}
+:root {
+  --main-font: "Montserrat", sans-serif;
+  --secondary-color: #f5a623;
+  --primary-color: #fffefe;
+  --shadow-color: #555555;
+}
