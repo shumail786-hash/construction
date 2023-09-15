@@ -9,4 +9,33 @@
   --secondary-color: #f5a623;
   --primary-color: #fffefe;
   --shadow-color: #555555;
+  --font-color: rgb(0, 0, 0);
+  --font-h-weight: 900;
+  --font-n-weight: 500;
+  --font-l-weight: 300;
+}
+html,
+body {
+  font-family: var(--main-font);
+  overflow-x: hidden;
+}
+button {
+  border: none;
+  outline: none;
+  font-family: var(--main-font);
+}
+ul {
+  list-style-type: none;
+}
+li {
+  list-style: none;
+  font-family: var(--main-font);
+}
+a {
+  text-decoration: none;
+  font-family: var(--main-font);
+  color: var(--primary-color);
+}
+a:hover {
+  color: var(--secondary-color);
 }

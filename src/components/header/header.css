@@ -1,0 +1,23 @@
+.app__header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../assets/header.jpg") no-repeat center;
+  background-attachment: fixed;
+  background-size: fill;
+  color: var(--primary-color);
+}
+.app__header_container {
+  max-width: 1024px;
+  margin: auto;
+}
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  .app__header {
+    background-position-x: center !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .app__header {
+    background-size: fill;
+    background-position-x: -50rem;
+  }
+}

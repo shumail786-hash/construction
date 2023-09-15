@@ -13,66 +13,33 @@ const Navbar = () => {
   };
   // console.log(toggler);
   return (
-    <div className="app__header">
-      <nav className="app__header_nav">
-        <div className="app__nav_logo">
-          <h3>CNST</h3>
+    <nav>
+      <div className="app__logo">CNST</div>
+      <div className="app__contact">
+        <button>Contact</button>
+        <span className="app__hamburger_span">
+          <GiHamburgerMenu className="app__hamburger" onClick={handleToggler} />
+        </span>
+      </div>
 
-          <ul className="app__navbar_links">
-            {["Company", "Services", "Project", "News", "Contact"].map(
-              (element, index) => (
-                <li key={index} className="app__nav_lists">
-                  <a href={`#${element}`}> {element} </a>
-                </li>
-              )
-            )}
-          </ul>
-        </div>
-        <div className="app__contact_links">
-          <div className="app__social_links">
-            <BiLogoFacebook className="app__social_icon facebook" />
-          </div>
-          <div className="app__social_links">
-            <FaXTwitter className="app__social_icon" />
-          </div>
-          <div className="app__social_links">
-            <AiOutlineInstagram className="app__social_icon instagram" />
-          </div>
-          <button className="app__contact_button">Contact</button>
-          <div className="app__icon_button">
-            <GiHamburgerMenu
-              className="app__menu_icon"
-              onClick={handleToggler}
-            />
-          </div>
-        </div>
-      </nav>
-
-      {toggler === true && (
-        <div className="app__responsive_navbar">
-          <ul className="app__responsive_navbar_links">
-            {["Company", "Services", "Project", "News", "Contact"].map(
-              (element, index) => (
-                <li key={index} className="app__nav_lists">
-                  <a href={`#${element}`}> {element} </a>
-                </li>
-              )
-            )}
-          </ul>
-          <div className="app__responsive_socials_links">
-            <div className="app__responsive_social_links">
-              <BiLogoFacebook className="app__social_icon facebook" />
-            </div>
-            <div className="app__responsive_social_links">
-              <FaXTwitter className="app__social_icon" />
-            </div>
-            <div className="app__responsive_social_links">
-              <AiOutlineInstagram className="app__social_icon instagram" />
-            </div>
-          </div>
-        </div>
-      )}
-    </div>
+      <div
+        className={`app__responsive_navbar ${
+          toggler ? "active" : "app__responsive_navbar"
+        }`}
+      >
+        <ul>
+          {["Company", "Services", "Projects", "News", "Contact"].map(
+            (item, index) => (
+              <li key={index}>
+                <a href={`#${item}`} onClick={handleToggler}>
+                  {item}
+                </a>
+              </li>
+            )
+          )}
+        </ul>
+      </div>
+    </nav>
   );
 };
 
