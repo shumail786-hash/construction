@@ -7,7 +7,7 @@
 .app__header_outline {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 }
 .app__header_outline h5 {
   background: var(--shadow-color);
@@ -94,6 +94,7 @@
 @media screen and (min-width: 768px) {
   .app__header_outline {
     width: 50%;
+    justify-content: center;
   }
   .app__header_imgCard {
     display: flex;

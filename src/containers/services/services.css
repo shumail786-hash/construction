@@ -1,0 +1,28 @@
+.app__services {
+  padding: 1rem;
+  background: var(--services-color);
+}
+.app__services_cards {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.app__service_card {
+  margin: 1rem;
+  width: 70%;
+}
+.app__service_card img {
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem 0rem;
+}
+.app__service_card p {
+  margin: 1rem 0rem;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .app__services_cards {
+    flex-direction: row;
+  }
+}

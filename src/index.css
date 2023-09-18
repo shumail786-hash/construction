@@ -3,13 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s ease-out;
+  scroll-behavior: smooth;
 }
 :root {
   --main-font: "Montserrat", sans-serif;
   --secondary-color: #f5a623;
   --primary-color: #fffefe;
   --shadow-color: #555555;
-  --font-color: rgb(0, 0, 0);
+  --services-color: #fef5e4;
+  --font-color: #333333;
   --font-h-weight: 900;
   --font-n-weight: 500;
   --font-l-weight: 300;

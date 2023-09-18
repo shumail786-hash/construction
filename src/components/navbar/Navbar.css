@@ -2,12 +2,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 1.3rem; */
   flex-wrap: wrap;
   height: 3rem;
   width: 100%;
   padding: auto;
-  /* border: 1px solid; */
 }
 .app__logo {
   padding: 0rem 1rem;
@@ -18,7 +16,6 @@ nav {
 }
 .app__nav {
   display: flex;
-  /* border: 1px solid; */
   align-items: center;
 }
 .app__nav li a {
@@ -67,7 +64,8 @@ nav {
   font-size: 14px;
 }
 .app__responsive_navbar {
-  position: relative;
+  position: fixed;
+  top: 9%;
   right: -200%;
   background: var(--shadow-color);
   height: calc(100vh - 9vh);
