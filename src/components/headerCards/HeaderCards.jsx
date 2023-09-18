@@ -17,10 +17,12 @@ const HeaderCards = () => {
           was love but whom never could I see again for life has not space
           enough.
         </p>
-        <button>
-          <AiOutlineDownCircle className="app__project_down_arrow" />
-        </button>{" "}
-        <span>See Projects</span>
+        <div className="app__see_projects">
+          <button>
+            <AiOutlineDownCircle className="app__project_down_arrow" />
+          </button>{" "}
+          <span>See Projects</span>
+        </div>
       </div>
       <div className="app__header_imgCard">
         <div className="app__header_main_card">

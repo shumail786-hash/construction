@@ -1,24 +1,56 @@
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
+  /* padding-top: 1.3rem; */
   flex-wrap: wrap;
+  height: 3rem;
+  width: 100%;
+  padding: auto;
   /* border: 1px solid; */
 }
 .app__logo {
+  padding: 0rem 1rem;
   font-weight: var(--font-h-weight);
+}
+.app__nav_container {
+  display: none;
+}
+.app__nav {
+  display: flex;
+  /* border: 1px solid; */
+  align-items: center;
+}
+.app__nav li a {
+  margin-left: 1rem;
+}
+.app__social_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--shadow-color);
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  display: none;
+}
+.app__social_link {
+  font-size: 13px;
+  font-weight: 100 !important;
+}
+.app__social_links:hover .app__social_link {
+  color: var(--secondary-color) !important;
 }
 .app__contact {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 .app__contact button {
   background: var(--shadow-color);
   padding: 0.2rem 0.6rem;
   color: var(--primary-color);
   font-weight: var(--font-n-weight);
+  cursor: pointer;
 }
 .app__hamburger_span {
   display: flex;
@@ -28,20 +60,22 @@ nav {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 50%;
+  cursor: pointer;
+  margin: 1rem;
 }
 .app__hamburger {
   font-size: 14px;
 }
 .app__responsive_navbar {
   position: relative;
-  right: -100%;
-  margin-top: 0.5rem;
+  right: -200%;
   background: var(--shadow-color);
-  height: calc(100vh - 3.2vh);
+  height: calc(100vh - 9vh);
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 999;
 }
 .app__responsive_navbar li {
   font-weight: var(--font-h-weight);
@@ -50,4 +84,23 @@ nav {
 }
 .active {
   right: 0;
+}
+@media screen and (min-width: 768px) {
+  .app__responsive_navbar {
+    display: none;
+  }
+  .app__hamburger_span {
+    display: none;
+  }
+  .app__social_links {
+    display: flex;
+    cursor: pointer;
+  }
+  .app__nav_container {
+    display: block;
+  }
+  .app__contact {
+    gap: 0.5rem;
+    margin-right: 1rem;
+  }
 }
