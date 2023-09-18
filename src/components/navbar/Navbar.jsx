@@ -4,16 +4,13 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
-// import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  // const naviagte = useNavigate();
   const [toggler, setToggler] = useState(false);
 
   const handleToggler = () => {
     setToggler(!toggler);
   };
-  // console.log(toggler);
   return (
     <nav>
       <div className="app__logo">CNST</div>
