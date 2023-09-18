@@ -1,41 +1,32 @@
 import React from "react";
 import "./services.css";
-import { images } from "../../constants";
-
-const details = [
-  {
-    image: images.consIcon,
-    heading: "Professionals",
-    para: "What looked like a small patch of purple grass, above five feet.",
-  },
-  {
-    image: images.excavator1,
-    heading: "Safety",
-    para: "When it came near enough he perceived that it was not grass.",
-  },
-  {
-    image: images.excavator2,
-    heading: "Sustainability",
-    para: "The roots were revolving for each small plant in the whole patch.",
-  },
-  {
-    image: images.mixertruck,
-    heading: "Quality",
-    para: "Patch of purple grass, above five feet square, was moving across.",
-  },
-];
-
+import { images } from "../../constants/index";
 const Services = () => {
   return (
-    <div className="app__services" id="Services">
-      <div className="app__services_cards">
-        {details.map((item, index) => (
-          <div className="app__service_card" key={index}>
-            <img src={item.image} alt={item.heading} />
-            <h4>{item.heading}</h4>
-            <p>{item.para}</p>
+    <div className="services__app" id="Services">
+      <div className="service__section">
+        <div className="service__left_section">
+          <p>
+            Fast and Affordable <br /> Services for You
+          </p>
+          <p>
+            Distant orb has power to raise and purify our thoughts like a strain
+            of sacred music.
+          </p>
+          <button>Services</button>
+        </div>
+        <div className="service__right_section">
+          <div className="service__image_card">
+            <img src={images.crane} alt="crane" />
           </div>
-        ))}
+          <div className="service__details">
+            <p>01. Building Renovation</p>
+            <p>
+              Apparently we had reached a great height in the atmosphere, for
+              the sky was a dead black, and the stars had ceased to twinkle
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -15,6 +15,13 @@ const About = () => {
           like a strain of sacred music, or a noble picture, or a passage from
           the grander poets. It always does good.
         </p>
+        <div className="app__engineer">
+          <div className="app__founder_image"></div>
+          <div className="app__founder_detail">
+            <p>Qurban Awan</p>
+            <p>Founder</p>
+          </div>
+        </div>
       </div>
     </div>
   );

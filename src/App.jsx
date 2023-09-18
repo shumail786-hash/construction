@@ -1,13 +1,15 @@
 import React from "react";
 import Header from "./components/header/Header";
-import Services from "./containers/services/Services";
 import About from "./containers/about/About";
+import Company from "./containers/company/Company";
+import Services from "./containers/services/Services";
 const App = () => {
   return (
     <div>
       <Header />
-      <Services />
+      <Company />
       <About />
+      <Services />
     </div>
   );
 };

@@ -1,28 +1,94 @@
-.app__services {
-  padding: 1rem;
+.services__app {
   background: var(--services-color);
+  padding: 1rem;
 }
-.app__services_cards {
+.service__section {
   max-width: 1024px;
   margin: auto;
+  padding: 1rem 0.5rem;
   display: flex;
   flex-direction: column;
 }
-.app__service_card {
+.service__left_section {
+  padding: 1.4rem 0rem;
+}
+.service__left_section p {
+  color: var(--font-color);
+  margin: 1rem 0rem;
+  font-weight: var(--font-h-weight);
+  font-size: 1.5rem;
+}
+.service__left_section p:nth-child(2) {
+  line-height: 1.3rem;
+  color: var(--font-color);
+  font-weight: var(--font-n-weight);
+  font-size: 13px;
+  letter-spacing: 0.03rem;
+}
+.service__left_section button {
+  font-size: 14px;
+  font-weight: var(--font-h-weight);
+  padding: 0.3rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  width: fit-content;
+}
+.service__right_section {
+  box-shadow: 0px 10px 10px 0px var(--shadow-color);
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+.service__image_card {
+  position: relative;
+  height: 12rem;
+  overflow: hidden;
+}
+.service__image_card img {
+  height: 100%;
+  width: 100%;
+}
+.service__image_card:hover img {
+  transform: scale(1.2);
+}
+.service__details {
+  background: var(--primary-color);
+  padding: 1.5rem 0rem;
+}
+.service__details p {
+  font-size: 1rem;
+  color: var(--font-color);
+  font-weight: var(--font-h-weight);
   margin: 1rem;
-  width: 70%;
 }
-.app__service_card img {
-  height: 2rem;
-  width: 2rem;
-  margin: 1rem 0rem;
-}
-.app__service_card p {
-  margin: 1rem 0rem;
+.service__details p:nth-child(2) {
   font-size: 12px;
+  font-weight: var(--font-l-weight);
+  letter-spacing: 0.03rem;
+  line-height: 1.3rem;
 }
 @media screen and (min-width: 768px) {
-  .app__services_cards {
+  .service__section {
     flex-direction: row;
+  }
+  .service__left_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  .service__left_section p:nth-child(2) {
+    width: 90%;
+  }
+  .service__right_section {
+    box-shadow: none;
+    max-width: 50%;
+    align-items: center;
+  }
+  .service__image_card {
+    width: 70%;
+  }
+  .service__details {
+    width: 70%;
   }
 }

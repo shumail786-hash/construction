@@ -4,6 +4,7 @@ import excavator1 from "../assets/excavator1.png";
 import excavator2 from "../assets/excavator2.png";
 import mixertruck from "../assets/mixer-truck.png";
 import crane from "../assets/crane.jpg";
+import engineer from "../assets/engineer.jpg";
 export default {
   headerImage,
   consIcon,
@@ -11,4 +12,5 @@ export default {
   excavator2,
   mixertruck,
   crane,
+  engineer,
 };
