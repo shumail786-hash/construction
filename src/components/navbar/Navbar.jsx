@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="app__logo">CNST</div>
       <div className="app__nav_container">
         <ul className="app__nav">
-          {["Company", "Services", "Projects", "News", "Contact"].map(
+          {["Company", "Services", "Projects", "Portfolio", "Testimonials"].map(
             (item, index) => (
               <li key={index}>
                 <a href={`#${item}`} onClick={handleToggler}>
@@ -47,7 +47,7 @@ const Navbar = () => {
         }`}
       >
         <ul>
-          {["Company", "Services", "Projects", "News", "Contact"].map(
+          {["Company", "Services", "Projects", "Portfolio", "Testimonials"].map(
             (item, index) => (
               <li key={index}>
                 <a href={`#${item}`} onClick={handleToggler}>

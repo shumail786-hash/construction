@@ -3,6 +3,8 @@ import Header from "./components/header/Header";
 import About from "./containers/about/About";
 import Company from "./containers/company/Company";
 import Services from "./containers/services/Services";
+import FooterService from "./containers/serviceFooter/FooterService";
+import Portfolio from "./containers/portfolio/Portfolio";
 const App = () => {
   return (
     <div>
@@ -10,6 +12,8 @@ const App = () => {
       <Company />
       <About />
       <Services />
+      <Portfolio />
+      <FooterService />
     </div>
   );
 };

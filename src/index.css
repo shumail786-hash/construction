@@ -12,9 +12,9 @@
   --shadow-color: #555555;
   --services-color: #fef5e4;
   --font-color: #333333;
-  --font-h-weight: 900;
+  --font-h-weight: bolder;
   --font-n-weight: 500;
-  --font-l-weight: 300;
+  --font-l-weight: 100;
 }
 html,
 body {
@@ -25,6 +25,7 @@ button {
   border: none;
   outline: none;
   font-family: var(--main-font);
+  cursor: pointer;
 }
 ul {
   list-style-type: none;

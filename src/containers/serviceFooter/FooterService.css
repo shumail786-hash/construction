@@ -1,0 +1,36 @@
+.app__services_dark {
+  padding: 1rem;
+  background-color: var(--font-color);
+}
+.app__footer_services_dark {
+  color: var(--primary-color);
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.app__footer_service_card {
+  margin: 1rem;
+  width: 70%;
+}
+.app__footer_service_card img {
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem 0rem;
+  filter: invert(100%) grayscale(1);
+}
+
+.app__footer_service_card_para {
+  margin: 0.5rem 0rem;
+  font-size: 12px;
+  font-weight: var(--font-h-weight);
+}
+.app__footer_service_card_para2 {
+  font-weight: 100;
+  font-size: 11.3px;
+}
+@media screen and (min-width: 768px) {
+  .app__footer_services_dark {
+    flex-direction: row;
+  }
+}
